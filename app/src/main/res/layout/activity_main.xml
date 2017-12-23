@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.integercalculator.ritaccc.integercalculator.MainActivity">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/textview_height"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView"
+        android:background="#ffffff"
+        android:layout_margin="0dp"
+        android:paddingRight="16dp"
+        android:gravity="bottom|right"
+        android:textSize="50sp"
+        android:nestedScrollingEnabled="false"
+        android:maxLines="1" />
+
+    <Button
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:text="1"
+        android:id="@+id/btn1"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text_size"
+        android:background="@drawable/button_border"
+        android:maxWidth="90dp" />
+
+    <Button
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:text="2"
+        android:id="@+id/btn2"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text_size"
+        android:background="@drawable/button_border"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/btn1"
+        android:layout_toEndOf="@+id/btn1"
+        android:maxWidth="90dp" />
+
+    <Button
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:text="3"
+        android:id="@+id/btn3"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text_size"
+        android:background="@drawable/button_border"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/btn2"
+        android:layout_toEndOf="@+id/btn2"
+        android:maxWidth="@dimen/button_size" />
+    <Button
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:text="4"
+        android:id="@+id/btn4"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text_size"
+        android:background="@drawable/button_border"
+        android:layout_below="@+id/btn1"
+        android:layout_toLeftOf="@+id/btn5" />
+
+    <Button
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:text="5"
+        android:id="@+id/btn5"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text_size"
+        android:background="@drawable/button_border"
+        android:layout_below="@+id/btn2"
+        android:layout_toRightOf="@+id/btn1"
+        android:layout_toEndOf="@+id/btn1" />
+
+    <Button
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:text="6"
+        android:id="@+id/btn6"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text_size"
+        android:background="@drawable/button_border"
+        android:layout_below="@+id/btn3"
+        android:layout_toRightOf="@+id/btn5"
+        android:layout_toEndOf="@+id/btn5" />
+    <Button
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:text="7"
+        android:id="@+id/btn7"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text_size"
+        android:background="@drawable/button_border"
+        android:layout_below="@+id/btn4"
+        android:layout_toLeftOf="@+id/btn5"
+        android:layout_toStartOf="@+id/btn5" />
+
+    <Button
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:text="8"
+        android:id="@+id/btn8"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text_size"
+        android:background="@drawable/button_border"
+        android:layout_alignTop="@+id/btn7"
+        android:layout_toRightOf="@+id/btn7"
+        android:layout_toEndOf="@+id/btn7" />
+
+    <Button
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:text="9"
+        android:id="@+id/btn9"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text_size"
+        android:background="@drawable/button_border"
+        android:layout_below="@+id/btn6"
+        android:layout_toRightOf="@+id/btn5"
+        android:layout_toEndOf="@+id/btn5" />
+
+    <Button
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:text="*"
+        android:id="@+id/btnMult"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text_size"
+        android:background="@drawable/button_border"
+        android:layout_below="@+id/btn7"
+        android:layout_alignLeft="@+id/btn7"
+        android:layout_alignStart="@+id/btn7" />
+
+    <Button
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:text="/"
+        android:id="@+id/btnDiv"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text_size"
+        android:background="@drawable/button_border"
+        android:layout_below="@+id/btn8"
+        android:layout_toRightOf="@+id/btn7"
+        android:layout_toEndOf="@+id/btn7" />
+
+    <Button
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:text="C"
+        android:id="@+id/btnClear"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text_size"
+        android:background="@drawable/button_border"
+        android:layout_below="@+id/btn9"
+        android:layout_toRightOf="@+id/btnDiv"
+        android:layout_toEndOf="@+id/btnDiv" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_size"
+        android:text="+"
+        android:id="@+id/btnPlus"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text_size"
+        android:background="@drawable/button_border"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/btn3"
+        android:layout_toEndOf="@+id/btn3"
+        android:maxWidth="@dimen/button_size" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_size"
+        android:text="-"
+        android:id="@+id/btnMinus"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text_size"
+        android:background="@drawable/button_border"
+        android:layout_below="@+id/btnPlus"
+        android:layout_toRightOf="@+id/btn3" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_size"
+        android:text="0"
+        android:id="@+id/btn0"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text_size"
+        android:background="@drawable/button_border"
+        android:layout_below="@+id/btnMinus"
+        android:layout_toRightOf="@+id/btn3" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_size"
+        android:text="="
+        android:id="@+id/btnEqual"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text_size"
+        android:background="@drawable/button_border"
+        android:layout_below="@+id/btn0"
+        android:layout_toRightOf="@+id/btn3" />
+
+</android.widget.RelativeLayout >
